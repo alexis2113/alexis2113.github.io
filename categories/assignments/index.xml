@@ -12,10 +12,10 @@
     
     <item>
       <title>practicle2</title>
-      <link>/1/01/01/practicle2/</link>
+      <link>/post/practicle2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1/01/01/practicle2/</guid>
+      <guid>/post/practicle2/</guid>
       <description>## impact x.pos y.pos Depth ## 1.002286 1.699226 1.330190 1.391844## impact x.pos y.pos Depth impact:x.pos ## 5.015303e+05 3.303200e+00 2.877470e+00 1.420266e+00 1.342261e+03 ## impact:y.pos ## 4.758675e+05## Waiting for profiling to be done...## (Intercept) impact1 x.pos y.pos Depth ## 1 1 0 1 0 ## impact1:x.pos impact1:y.pos ## 0 0## (Intercept) impact1 x.pos y.pos Depth ## 1 0 1 1 1 ## impact1:x.pos impact1:y.pos ## 1 0## [1] 0.</description>
     </item>
     
