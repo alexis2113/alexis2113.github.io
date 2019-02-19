@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>whattag on Sniffle</title>
-    <link>/tags/whattag/</link>
-    <description>Recent content in whattag on Sniffle</description>
+    <title>r on Sniffle</title>
+    <link>/categories/r/</link>
+    <description>Recent content in r on Sniffle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/whattag/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>exampleproject</title>
-      <link>/project/exampleproject/</link>
+      <title>post3</title>
+      <link>/post/post3/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/exampleproject/</guid>
+      <guid>/post/post3/</guid>
       <description>library(ggplot2)ggplot(mtcars,aes(x = mpg,y=cyl))+geom_point()</description>
     </item>
     

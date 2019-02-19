@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mine on Mine</title>
+    <title>Sniffle on Sniffle</title>
     <link>/</link>
-    <description>Recent content in Mine on Mine</description>
+    <description>Recent content in Sniffle on Sniffle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0000</lastBuildDate>
@@ -21,6 +21,85 @@
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
 ggplot(mtcars,aes(x = mpg,y=cyl))+geom_point()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/project/2019-02-19-exampleproject_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>post3</title>
+      <link>/post/post3/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/post3/</guid>
+      <description>
+
+
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+ggplot(mtcars,aes(x = mpg,y=cyl))+geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Practicle1</title>
+      <link>/post/p1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/p1/</guid>
+      <description>
+
+
+&lt;p&gt;1.A 48.99335 54.12365 38 66 48.10512 55.11201&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/p1_files/figure-html/eruptions-1.png&#34; width=&#34;672&#34; /&gt;&lt;img src=&#34;/post/p1_files/figure-html/eruptions-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Range of pre: 0 ~ 4860.879
+Range of post: 0 ~ 12783.97&lt;/p&gt;
+&lt;div id=&#34;confidence-interval&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Confidence interval&lt;/h2&gt;
+&lt;div id=&#34;normal&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Normal&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pre &amp;lt;- subset(data, impact == 0)
+post &amp;lt;- subset(data, impact == 1)
+mean(pre$ab) + 1.96 * (sd(pre$ab) / sqrt(15129))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 55.03908&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mean(pre$ab) - 1.96 * (sd(pre$ab) / sqrt(15129))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 48.07792&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mean(post$ab) + 1.96 * (sd(post$ab) / sqrt(12725))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 82.5884&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mean(post$ab) - 1.96 * (sd(post$ab) / sqrt(12725))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 68.19987&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;poisson&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;poisson&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mean(pre$ab)+1.96*sqrt(mean(pre$ab)/(15129))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 51.67292&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mean(pre$ab)-1.96*sqrt(mean(pre$ab)/(15129))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 51.44408&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mean(post$ab)+1.96*sqrt(mean(post$ab)/(12725))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 75.545&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mean(post$ab)-1.96*sqrt(mean(post$ab)/(12725))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 75.24327&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;boostrap&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;boostrap&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;results &amp;lt;- matrix(0, nrow = 1000, ncol = 1)
+for (j in 1:1000) {
+  rowsToUse &amp;lt;- sort(sample(which(data$impact == 0),
+                           length(which(data$impact == 0)), replace = T))
+  results[j, ] &amp;lt;- mean(data$Nhat[rowsToUse] / data$area[rowsToUse])
+}
+quantile(results, probs = c(0.025, 0.975))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##     2.5%    97.5% 
+## 48.13734 55.10578&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;results &amp;lt;- matrix(0, nrow = 1000, ncol = 1)
+for (j in 1:1000) {
+  rowsToUse &amp;lt;- sort(sample(which(data$impact == 1),
+                           length(which(data$impact == 1)), replace = T))
+  results[j, ] &amp;lt;- mean(data$Nhat[rowsToUse] / data$area[rowsToUse])
+}
+quantile(results, probs = c(0.025, 0.975))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##     2.5%    97.5% 
+## 68.40201 82.33514&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
