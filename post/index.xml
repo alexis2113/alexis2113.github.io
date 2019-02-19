@@ -1,46 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>post on Notes</title>
+    <title>Posts on Mine</title>
     <link>/post/</link>
-    <description>Recent content in post on Notes</description>
+    <description>Recent content in Posts on Mine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    
-    <item>
-      <title>Practicleone</title>
-      <link>/post/p1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/p1/</guid>
-      <description>1.A 48.99335 54.12365 38 66 48.10512 55.11201
-Range of pre: 0 ~ 4860.879Range of post: 0 ~ 12783.97
-Confidence intervalNormalpre &amp;lt;- subset(data,impact==0)post &amp;lt;- subset(data,impact==1)mean(pre$ab)+1.96*(sd(pre$ab)/sqrt(15129))mean(pre$ab)-1.96*(sd(pre$ab)/sqrt(15129))mean(post$ab)+1.96*(sd(post$ab)/sqrt(12725))mean(post$ab)-1.96*(sd(post$ab)/sqrt(12725))## [1] 55.03908## [1] 48.07792## [1] 82.5884## [1] 68.19987poissonmean(pre$ab)+1.96*sqrt(mean(pre$ab)/(15129))mean(pre$ab)-1.96*sqrt(mean(pre$ab)/(15129))mean(post$ab)+1.96*sqrt(mean(post$ab)/(12725))mean(post$ab)-1.96*sqrt(mean(post$ab)/(12725))## [1] 51.67292## [1] 51.44408## [1] 75.545## [1] 75.24327boostrapresults&amp;lt;- matrix(0, nrow=1000, ncol=1)for(j in 1:1000){rowsToUse&amp;lt;-sort(sample(which(data$impact==0),length(which(data$impact==0)), replace=T))results[j,]&amp;lt;- mean(data$Nhat[rowsToUse]/data$area[rowsToUse])}quantile(results, probs=c(0.</description>
-    </item>
-    
-    <item>
-      <title>practicle2</title>
-      <link>/post/practicle2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/practicle2/</guid>
-      <description>## impact x.pos y.pos Depth ## 1.002286 1.699226 1.330190 1.391844## impact x.pos y.pos Depth impact:x.pos ## 5.015303e+05 3.303200e+00 2.877470e+00 1.420266e+00 1.342261e+03 ## impact:y.pos ## 4.758675e+05## Waiting for profiling to be done...## (Intercept) impact1 x.pos y.pos Depth ## 1 1 0 1 0 ## impact1:x.pos impact1:y.pos ## 0 0## (Intercept) impact1 x.pos y.pos Depth ## 1 0 1 1 1 ## impact1:x.pos impact1:y.pos ## 1 0## [1] 0.</description>
-    </item>
     
   </channel>
 </rss>
