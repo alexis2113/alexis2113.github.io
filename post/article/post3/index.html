@@ -28,12 +28,10 @@
   
     
   
-  <meta name="description" content="1.A 48.99335 54.12365 38 66 48.10512 55.11201
-Range of pre: 0 ~ 4860.879 Range of post: 0 ~ 12783.97
-Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset(data, impact == 1) mean(pre$ab) &#43; 1.96 * (sd(pre$ab) / sqrt(15129)) ## [1] 55.03908 mean(pre$ab) - 1.96 * (sd(pre$ab) / sqrt(15129)) ## [1] 48.07792 mean(post$ab) &#43; 1.96 * (sd(post$ab) / sqrt(12725)) ## [1] 82.5884 mean(post$ab) - 1.96 * (sd(post$ab) / sqrt(12725)) ## [1] 68.">
+  <meta name="description" content="library(ggplot2)ggplot(mtcars,aes(x = mpg,y=cyl))&#43;geom_point()">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/practicle1/">
+  <link rel="alternate" hreflang="en-us" href="/post/article/post3/">
 
   
 
@@ -105,7 +103,7 @@ Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/practicle1/">
+  <link rel="canonical" href="/post/article/post3/">
 
   
   
@@ -117,22 +115,21 @@ Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Sniffle">
-  <meta property="og:url" content="/post/practicle1/">
-  <meta property="og:title" content="practicle1 | Sniffle">
-  <meta property="og:description" content="1.A 48.99335 54.12365 38 66 48.10512 55.11201
-Range of pre: 0 ~ 4860.879 Range of post: 0 ~ 12783.97
-Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset(data, impact == 1) mean(pre$ab) &#43; 1.96 * (sd(pre$ab) / sqrt(15129)) ## [1] 55.03908 mean(pre$ab) - 1.96 * (sd(pre$ab) / sqrt(15129)) ## [1] 48.07792 mean(post$ab) &#43; 1.96 * (sd(post$ab) / sqrt(12725)) ## [1] 82.5884 mean(post$ab) - 1.96 * (sd(post$ab) / sqrt(12725)) ## [1] 68."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/article/post3/">
+  <meta property="og:title" content="post3 | Sniffle">
+  <meta property="og:description" content="library(ggplot2)ggplot(mtcars,aes(x = mpg,y=cyl))&#43;geom_point()"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2019-02-19T00:00:00&#43;00:00">
   
+  <meta property="article:modified_time" content="2019-02-19T00:00:00&#43;00:00">
   
+
   
 
   
 
-  
-
-  <title>practicle1 | Sniffle</title>
+  <title>post3 | Sniffle</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -328,7 +325,7 @@ Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">practicle1</h1>
+  <h1 itemprop="name">post3</h1>
 
   
 
@@ -337,8 +334,8 @@ Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset
 
 
 
-<meta content="" itemprop="datePublished">
-<meta content="" itemprop="dateModified">
+<meta content="2019-02-19 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-02-19 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -351,7 +348,7 @@ Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset
     
       
     
-    <time>Jan 1, 0001</time>
+    <time>Feb 19, 2019</time>
   </span>
   
 
@@ -362,6 +359,17 @@ Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset
   
   
 
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/r/">r</a>
+    
+  </span>
+  
   
 
   
@@ -399,82 +407,17 @@ Confidence interval Normal pre &lt;- subset(data, impact == 0) post &lt;- subset
     <div class="article-style" itemprop="articleBody">
       
 
-<p>1.A 48.99335 54.12365 38 66 48.10512 55.11201</p>
 
-<p><img src="p1_files/figure-markdown_strict/eruptions-1.png" alt="" /><img src="p1_files/figure-markdown_strict/eruptions-2.png" alt="" /></p>
-
-<p>Range of pre: 0 ~ 4860.879 Range of post: 0 ~ 12783.97</p>
-
-<h2 id="confidence-interval">Confidence interval</h2>
-
-<h3 id="normal">Normal</h3>
-
-<pre><code>pre &lt;- subset(data, impact == 0)
-post &lt;- subset(data, impact == 1)
-mean(pre$ab) + 1.96 * (sd(pre$ab) / sqrt(15129))
-
-## [1] 55.03908
-
-mean(pre$ab) - 1.96 * (sd(pre$ab) / sqrt(15129))
-
-## [1] 48.07792
-
-mean(post$ab) + 1.96 * (sd(post$ab) / sqrt(12725))
-
-## [1] 82.5884
-
-mean(post$ab) - 1.96 * (sd(post$ab) / sqrt(12725))
-
-## [1] 68.19987
-</code></pre>
-
-<h3 id="poisson">poisson</h3>
-
-<pre><code>mean(pre$ab)+1.96*sqrt(mean(pre$ab)/(15129))
-
-## [1] 51.67292
-
-mean(pre$ab)-1.96*sqrt(mean(pre$ab)/(15129))
-
-## [1] 51.44408
-
-mean(post$ab)+1.96*sqrt(mean(post$ab)/(12725))
-
-## [1] 75.545
-
-mean(post$ab)-1.96*sqrt(mean(post$ab)/(12725))
-
-## [1] 75.24327
-</code></pre>
-
-<h3 id="boostrap">boostrap</h3>
-
-<pre><code>results &lt;- matrix(0, nrow = 1000, ncol = 1)
-for (j in 1:1000) {
-  rowsToUse &lt;- sort(sample(which(data$impact == 0),
-                           length(which(data$impact == 0)), replace = T))
-  results[j, ] &lt;- mean(data$Nhat[rowsToUse] / data$area[rowsToUse])
-}
-quantile(results, probs = c(0.025, 0.975))
-
-##     2.5%    97.5% 
-## 48.04799 54.91988
-
-results &lt;- matrix(0, nrow = 1000, ncol = 1)
-for (j in 1:1000) {
-  rowsToUse &lt;- sort(sample(which(data$impact == 1),
-                           length(which(data$impact == 1)), replace = T))
-  results[j, ] &lt;- mean(data$Nhat[rowsToUse] / data$area[rowsToUse])
-}
-quantile(results, probs = c(0.025, 0.975))
-
-##     2.5%    97.5% 
-## 68.34301 82.24251
-</code></pre>
+<pre class="r"><code>library(ggplot2)
+ggplot(mtcars,aes(x = mpg,y=cyl))+geom_point()</code></pre>
+<p><img src="/post/article/index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 
     </div>
 
     
+
+
+
 
 
     
@@ -501,15 +444,10 @@ quantile(results, probs = c(0.025, 0.975))
     <div class="article-widget">
       <div class="post-nav">
   
-  <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/post/article/post3/" rel="next">post3</a>
-  </div>
-  
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/post/practicle2/" rel="prev">practicle2</a>
+    <a href="/post/practicle1/" rel="prev">practicle1</a>
   </div>
   
 </div>

@@ -13,10 +13,10 @@
     
     <item>
       <title>post3</title>
-      <link>/post/post3/</link>
+      <link>/post/article/post3/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/post3/</guid>
+      <guid>/post/article/post3/</guid>
       <description>library(ggplot2)ggplot(mtcars,aes(x = mpg,y=cyl))+geom_point()</description>
     </item>
     
