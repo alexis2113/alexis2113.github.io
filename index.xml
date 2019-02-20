@@ -44,38 +44,30 @@ ggplot(mtcars,aes(x = mpg,y=cyl))+geom_point()&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
-      <title>post3</title>
-      <link>/post/article/post3/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Codepenplayground</title>
+      <link>/playground/codepen/p2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/article/post3/</guid>
+      <guid>/playground/codepen/p2/</guid>
       <description>
 
 
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
-ggplot(mtcars,aes(x = mpg,y=cyl))+geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/article/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>R Notebook</title>
-      <link>/playground/p2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/playground/p2/</guid>
-      <description>&lt;p&gt;This is an &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; target=&#34;_blank&#34;&gt;R Markdown&lt;/a&gt; Notebook. When you execute code within the notebook, the results appear beneath the code.&lt;/p&gt;
 
-&lt;p&gt;Try executing this chunk by clicking the &lt;em&gt;Run&lt;/em&gt; button within the chunk or by placing your cursor inside it and pressing &lt;em&gt;Ctrl+Shift+Enter&lt;/em&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(cars)
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Add a new chunk by clicking the &lt;em&gt;Insert Chunk&lt;/em&gt; button on the toolbar or by pressing &lt;em&gt;Ctrl+Alt+I&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the &lt;em&gt;Preview&lt;/em&gt; button or press &lt;em&gt;Ctrl+Shift+K&lt;/em&gt; to preview the HTML file).&lt;/p&gt;
 
-&lt;p&gt;The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike &lt;em&gt;Knit&lt;/em&gt;, &lt;em&gt;Preview&lt;/em&gt; does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.&lt;/p&gt;
+
+
+
+&lt;p class=&#34;codepen&#34; data-height=&#34;365&#34; data-theme-id=&#34;dark&#34; data-default-tab=&#34;css,result&#34; data-user=&#34;erdemuslu&#34; data-slug-hash=&#34;bzOdRb&#34; data-preview=&#34;true&#34; style=&#34;height: 365px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 0em;&#34; data-pen-title=&#34;&#34;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&#34;https://codepen.io/erdemuslu/pen/bzOdRb&#34;&gt;
+  bzOdRb&lt;/a&gt; by erdemuslu (&lt;a href=&#34;https:/codepen.io/erdemuslu&#34;&gt;@erdemuslu&lt;/a&gt;)
+  on &lt;a href=&#34;https://codepen.io&#34;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async src=&#34;https://static.codepen.io/assets/embed/ei.js&#34;&gt;&lt;/script&gt;
+
+
 </description>
     </item>
     

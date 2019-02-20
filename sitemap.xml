@@ -20,14 +20,6 @@
     
     <url>
     
-      <loc>/post/article/post3/</loc>
-      <lastmod>2019-02-19T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/author/admin/</loc>
     </url>
     
@@ -59,6 +51,13 @@
     
     <url>
     
+      <loc>/playground/codepen/p2/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/playground/</loc>
     </url>
     
@@ -67,7 +66,6 @@
     <url>
     
       <loc>/post/</loc>
-      <lastmod>2019-02-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -98,14 +96,14 @@
     
     <url>
     
-      <loc>/playground/p2/</loc>
+      <loc>/project/p2/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>/project/p2/</loc>
+      <loc>/post/article/</loc>
     </url>
     
   
@@ -162,15 +160,6 @@
     <url>
     
       <loc>/post/practicle2/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/r/</loc>
-      <lastmod>2019-02-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
